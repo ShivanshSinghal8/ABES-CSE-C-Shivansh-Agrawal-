@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
+    <!-- <style>
         #x{
             border: 5px solid saddlebrown;
             height: 200px;
@@ -17,10 +17,10 @@
             margin-top: 70px;
             margin-left: 70px;
         }
-    </style>
+    </style> -->
 </head>
-<body>
-    <div id="x" onclick="ad()">
+<body id="x">
+    <!-- <div id="x" onclick="ad()">
         <button id="button">Click</button>
         <p id="aaa"></p>
     </div>
@@ -28,7 +28,7 @@
         function ad(){
             document.getElementById("aaa").innerHTML="<h1>Hello</h1>";
         }
-    </script>
+    </script> -->
     <!-- <script>
         function abes(){
             document.write("We are students of abesec");
@@ -46,5 +46,19 @@
         add(3,6);
         subtraction(44,5);
     </script> -->
+    <button onclick="red()">RED</button>
+    <button onclick="green()">Green</button>
+    <button onclick="blue()">Blue</button>
+    <script>
+        function red(){
+            document.getElementById("x").style.backgroundColor="red";
+        }
+        function green(){
+            document.getElementById("x").style.backgroundColor="green";
+        }
+        function blue(){
+            document.getElementById("x").style.backgroundColor="blue";
+        }
+    </script>
 </body>
 </html>
