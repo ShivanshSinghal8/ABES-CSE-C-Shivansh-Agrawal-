@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <style>
+        #x{
+            border: 5px solid saddlebrown;
+            height: 200px;
+            width: 200px;
+            background-color: darksalmon;
+        }
+        #button{
+            background-color: saddlebrown;
+            height: 30px;
+            width: 50px;
+            font-size: large;
+            color: darksalmon;
+            margin-top: 70px;
+            margin-left: 70px;
+        }
+    </style>
 </head>
 <body>
+    <div id="x" onclick="ad()">
+        <button id="button">Click</button>
+        <p id="aaa"></p>
+    </div>
     <script>
+        function ad(){
+            document.getElementById("aaa").innerHTML="<h1>Hello</h1>";
+        }
+    </script>
+    <!-- <script>
         function abes(){
             document.write("We are students of abesec");
         }
@@ -20,6 +45,6 @@
         }
         add(3,6);
         subtraction(44,5);
-    </script>
+    </script> -->
 </body>
 </html>
