@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #card{
+            height: 400px;
+            width: 400px;
+            margin-left: 400px;
+            margin-top: 100px;
+            border: 10px solid black;
+            border-radius: 15%;
+        }
+        #nav{            
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            font-size: x-large;
+
+        }
+        #img{
+            margin-top: 5px;
+            margin-left: 10px;
+            height:50px;
+            border-radius: 100%;
+        }
+        .button{
+            margin-top: 150px;
+            margin-left: 30px;
+            height:50px;
+            width:2000px;
+            display: flex;
+            flex-direction: row;
+        }
+        #counter{
+            margin-top: 50px;
+            margin-left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="card">
+        <div id="nav">
+            <img src="OIP.webp" id="img">
+            <p style="margin-left: 60px;">Counter App</p>
+        </div>
+        <div id="counter">
+            <div id="count">
+                <button>Alert</button>
+                <script>
+                var a=0;
+                function counter(a){
+                    document.write(a);
+                }
+                function plus(a){
+                    a += 1;
+                    if (a > 10){
+                        
+                    }
+                    counter(a);
+                }
+                function subtract(a){
+                    a -= 1;
+                    if (a < 0){
+
+                    }
+                }
+                counter(a);
+            </script>
+            <button>Alert</button>
+            </div>
+            <div class="button">
+                <button onclick="counter()" >+</button>
+                <button onclick="counter()" >-</button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
