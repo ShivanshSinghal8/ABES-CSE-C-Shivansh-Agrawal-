@@ -3,6 +3,15 @@
 <head>
 </head>
 <body>
-    
+    <script>
+        function sum(a, b){
+            console.log(a + b);
+        }
+        function call( a, b, sumcallback){
+            sumcallback(a, b);
+        }
+
+        call(3, 4, sum);
+    </script>
 </body>
 </html>
