@@ -1,8 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        #container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        #card{
+            width: 50%;
+            height: 1000px;
+            color: black;
+            border: 4px solid;
+        }
+        #logo{
+            margin-top: 20px;
+            width: 50px;
+            height: 50px;
+            margin-left: 20px;
+            border-radius: 50%;
+        }
+        #nav{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="container">
+        <div id="card">
+            <div id="nav">
+                <img src="OIP.webp" id="logo">
+                <h2 id="displayName"></h2>
+            </div>
+            <div>
+                <h3>Know Languages: </h3>
+                <ul>
+                    <li id="l1"></li>
+                    <lin id="l2"></li>
+                    <li id="l3"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="form">
+            Your Name: <input type="text" id="nameInput"><br><br>
+            Know Language: <br>
+            <input type="text" id="language1"><br><br>
+            <input type="text" id="language2"><br><br>
+            <input type="text" id="language3"><br><br>
+            <button onclick="display()"> Submit</button>
+        </div>  
+    </div>
+
+
+    <script>
+        function display(){
+            let name = document.getElementById("nameInput").value;
+            let lang1 = document.getElementById("language1").value;
+            let lang2 = document.getElementById("language2").value;
+            let lang3 = document.getElementById("language3").value;
+            document.getElementById("displayName").textContent = name;
+            document.getElementById("l1").textContent = lang1;
+            document.getElementById("l2").textContent = lang2;
+            document.getElementById("l3").textContent = lang3;
+        }
+    </script>
 </body>
 </html>
