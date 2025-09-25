@@ -4,14 +4,22 @@
 </head>
 <body>
     <script>
-        function sum(a, b){
-            console.log(a + b);
+        //callback hell
+        function getData(dataid , getNextData){
+            setTimeout(() => {
+                console.log("data", dataid);
+                if (getNextData){
+                    getNextData();
+                }
+            }, 2000);
         }
-        function call( a, b, sumcallback){
-            sumcallback(a, b);
-        }
-
-        call(3, 4, sum);
+            getData(1, ()=> {
+                getData(2, ()=> {
+                    getData(3, ()=>{
+                        getData(4);
+                    });
+                });
+            });
     </script>
 </body>
 </html>
